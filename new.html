@@ -4,30 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>new project</title>
-    <style>
-        body{
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        
-        }
-        #row2{
-            display: flex;
-            flex-direction: row;
-
-        }
-        button{
-            padding: 4px 10px;
-            border: 1px solid black;
-            border-radius: 5px;
-            width: fit-content;
-            margin: 10px 30px 10px 30px;
-            cursor: pointer;
-            
-        }
-    </style>
+    <link rel="stylesheet" href="./new1.css">
 </head>
 <body>
     
@@ -38,28 +15,8 @@
     <p id="tag">0</p>
     <button id="dec">decrement by 1</button></div>
     <p><button id="res">reset</button></p>
-    <script>
-        let change=document.getElementById("tag");
-        function increment(){
-            change.innerText=Number(Number(change.innerText)+1);
-        }
-        function decrement(){
-            if(Number(change.innerText)==0){
-                alert("cannot decrement more!!!!!");
-            }
-            else{
-            change.innerText=Number(Number(change.innerText)-1);}
-        }
-        function reset(){
-            change.innerText=0;
-        }
-        const btn1=document.getElementById("inc");
-        btn1.addEventListener("click",increment);
-        const btn2=document.getElementById("dec");
-        btn2.addEventListener("click",decrement);
-        const btn3=document.getElementById("res");
-        btn3.addEventListener("click",reset);
-
+    <script src="new2.js">
+       
     </script>
 </body>
 </html>
